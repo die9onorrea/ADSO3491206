@@ -160,5 +160,16 @@ body {
             min-height: 200px;
             width: 380px
         }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 30px;
+            height: 30px;
+            border: 1px solid white;
+        }
+        .red{
+            background: red;
+        }
     }
 }
