@@ -31,6 +31,21 @@ body {
             }
         }
     }
+    &.emmet{
+        background: linear-gradient(45deg, black, #7acb16);
+        section{
+            h2.subtitle{
+                color: #7acb16;
+                border-bottom: 2px dotted #7acb16;
+                padding-bottom: 0.4rem;
+                small{
+                    color: #fff;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
     &.html{
         background: linear-gradient(45deg, black, #e44d26);
         main{
@@ -58,6 +73,9 @@ body {
         }
     }
     main {
+        background-color: rgba(9, 9, 9, 0.297);
+        border-radius: 0.4rem;
+        padding: 1rem;
         header.mainmenu {
             &.internal{
                 h1{
