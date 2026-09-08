@@ -57,7 +57,15 @@ body {
                 }
             }
         }
+        section{
+            margin: 2rem auto;
+            h2.subtitle{
+                color: #c28df7;
+                border-bottom: 2px dotted #663399;
+                padding-bottom: 0.4rem;
     }
+}
+}
     &.emmet{
         background: linear-gradient(45deg, black, #7acb16);
         section{
@@ -217,4 +225,5 @@ body {
             background: red;
         }
     }
+}
 }

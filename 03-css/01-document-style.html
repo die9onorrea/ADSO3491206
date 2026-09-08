@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>00-template</title>
+    <title>01-document-style</title>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        div.flag{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            margin: 1rem auto;
+            width: 280px;
+            &.colombia{
+                background: linear-gradient(to bottom, #ffcd00 50%, #003087 50%, #003087 75%, #c8102e 75%);
+            }
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -14,12 +27,13 @@
     </nav>
     <main>
         <header class="mainmenu internal">
-            <h1>00-template</h1>
+            <h1>01-document-style</h1>
             <img src="../src/imgs/logo-css.png" alt="CSS">
-            <h3>Description</h3>
+            <h3>This way we can include CSS within the style tag, it is very useful when you only have an html document.</h3>
         </header>
         <section>
-
+            <h2 class="subtitle">Colombia Flag:</h2>
+            <div class="flag colombia"></div>
         </section>
     </main>
 </body>
