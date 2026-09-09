@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>04-basic-selectors</title>
+    <title>05-advanced-selectors</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <style>
-        /* Universal Selector */
-        /* { border: 1px solid yellow;} */
-        /* Merge Selectors */
-        section#sec01 h4 {
-            color: #ab7dd9;
-            border: none;
-            text-align: center;
-            &.upper { text-transform: uppercase;}
-            &.rotate { transform: rotate(-45deg);}
-            &.txt-lg { font-size:4rem;}
+        ul > li[class="orange"] + li {
+            background-color: #f09d0f;
+            color:black;
         }
     </style>
 </head>
@@ -27,21 +20,23 @@
     </nav>
     <main>
         <header class="mainmenu internal">
-            <h1>04-basic-selectors</h1>
+            <h1>05-advanced-selectors</h1>
             <img src="../src/imgs/logo-css.png" alt="CSS">
             <ul>
-                <li>Universal (*)</li>
-                <li>Type / Tag (p)</li>
-                <li>Descending (div p)</li>
-                <li>Class (.important)</li>
-                <li>ID (#cod389)</li>
-                <li>Merge (div#user3 p.title)</li>
-                <li>Group: (div.lg, div.md, div.sm)</li>
+                <li>Adjacent/Sibling (+)</li>
+                <li>Attribute [class]</li>
+                <li>Children (>)</li>
             </ul>
         </header>
-        <section id="sec01">
+        <section>
             <h2 class="subtitle">Ejemplo:</h2>
-            <h4 class="upper rotate txt-lg">adso</h4>
+            <ul class="fruits">
+                <li class="orange">🟠 Orange</li>
+                <li class="apple">🍎 Apple</li>
+                <li class="banana">🍌 Banana</li>
+                <li class="grapes">🍇 Grapes</li>
+                <li class="watermelon">🍉 Watermelon</li>
+            </ul>
         </section>
     </main>
 </body>
